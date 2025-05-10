@@ -43,3 +43,27 @@ git push -u origin main
 ```
 ansible-galaxy role import <your_github_username> <role-name>
 ```
+
+This command will link your github to ansible -galaxy role
+
+5. Get Role from Ansible Galaxy
+
+```
+ansible-galaxy install <github_username>.<role-name>
+```
+6. Some basic roles and collections commands
+
+```
+# Create a new role
+ansible-galaxy init myrole
+
+# Install a role from Galaxy
+ansible-galaxy install geerlingguy.nginx
+
+# Install a collection
+ansible-galaxy collection install community.general
+
+# Build and publish a collection
+ansible-galaxy collection build
+ansible-galaxy collection publish my_namespace-my_collection-1.0.0.tar.gz
+```
